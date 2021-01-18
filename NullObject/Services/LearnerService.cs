@@ -20,7 +20,7 @@ namespace NullObject.Services
             
             var learner = _repo.GetLearner(learnerId);
             
-            if (learner == null) throw new NullReferenceException();
+            if (learner == null) return new NullLerner();
 
             return learner;
         }
